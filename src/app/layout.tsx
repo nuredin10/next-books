@@ -22,7 +22,7 @@ export default function RootLayout({
         <body className={inter.className}>
         <RecoilRootWrapper>
             <ReactQuery>
-                <div className="container mx-auto max-w-2xl border-[1px] border-gray-500">
+                <div className="container mx-auto max-w-2xl">
                     <NextTopLoader/>
                     {children}
                 </div>
