@@ -2,6 +2,8 @@ import './globals.css'
 import type {Metadata} from 'next'
 import {Inter} from 'next/font/google'
 import ReactQuery from "@/app/ReactQuery";
+import RecoilRootWrapper from "@/app/RecoilRoot";
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({subsets: ['latin']})
 
@@ -18,11 +20,14 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={inter.className}>
-        <ReactQuery>
-            <div className="container mx-auto max-w-2xl border-[1px] border-gray-500">
-                {children}
-            </div>
-        </ReactQuery>
+        <RecoilRootWrapper>
+            <ReactQuery>
+                <div className="container mx-auto max-w-2xl border-[1px] border-gray-500">
+                    <NextTopLoader/>
+                    {children}
+                </div>
+            </ReactQuery>
+        </RecoilRootWrapper>
         </body>
         </html>
     )

@@ -2,14 +2,19 @@ import CardImage from "@/components/BookCard/CardImage";
 import Title from "@/components/BookCard/Title";
 import DiscoundAndPrice from "@/components/BookCard/DiscoundAndPrice";
 import CardTextWrapper from "@/components/BookCard/CardTextWrapper";
+import Book from "@/types/Book";
+import {useRouter} from "next/navigation";
 
-const Card = () => {
+const Card = ({book}: { book:Book }) => {
+
+    const router = useRouter();
+
     return (
-        <div>
-            <CardImage/>
+        <div onClick={()=>router.push('/1')}>
+            <CardImage coverImage={book.coverImage} />
             <CardTextWrapper>
-                <Title/>
-                <DiscoundAndPrice/>
+                <Title title={book.title}/>
+                <DiscoundAndPrice discountRate={book.discountRate} price={book.price}/>
             </CardTextWrapper>
         </div>
     )

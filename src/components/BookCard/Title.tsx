@@ -1,8 +1,8 @@
 
-const Title = ()=>{
+const Title = ({title}:{title:string})=>{
     return(
         <div className=''>
-            <h1 className='text-sm text-black font-medium'>레이블라우스</h1>
+            <h1 className='text-sm text-black font-medium'>{title}</h1>
         </div>
     )
 }
