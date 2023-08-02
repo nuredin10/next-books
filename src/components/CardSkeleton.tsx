@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const CardSkeleton = () => {
     return (
-        <div className='animate-pulse flex justify-start items-center flex-wrap gap-[2px]'>
+        <div className='animate-pulse flex justify-center items-center flex-wrap gap-[2px]'>
             <div className='mt-5'>
-                <div className='bg-[#EDEEF3] h-48 w-48 flex justify-center items-center'>
+                <div className='bg-[#EDEEF3] h-[185px] w-[185px] flex justify-center items-center'>
                     <Image src='/card-cover.svg' alt='book' width={24} height={24}/>
                 </div>
                 <div
@@ -17,7 +17,7 @@ const CardSkeleton = () => {
             </div>
 
             <div className='mt-5'>
-                <div className='bg-[#EDEEF3] h-48 w-48 flex justify-center items-center'>
+                <div className='bg-[#EDEEF3] h-[185px] w-[185px] flex justify-center items-center'>
                     <Image src='/card-cover.svg' alt='book' width={24} height={24}/>
                 </div>
                 <div
@@ -30,7 +30,7 @@ const CardSkeleton = () => {
             </div>
 
             <div className='mt-5'>
-                <div className='bg-[#EDEEF3] h-48 w-48 flex justify-center items-center'>
+                <div className='bg-[#EDEEF3] h-[185px] w-[185px] flex justify-center items-center'>
                     <Image src='/card-cover.svg' alt='book' width={24} height={24}/>
                 </div>
                 <div
