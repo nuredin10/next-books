@@ -1,13 +1,16 @@
 import CardImage from "@/components/BookCard/CardImage";
 import Title from "@/components/BookCard/Title";
 import DiscoundAndPrice from "@/components/BookCard/DiscoundAndPrice";
+import CardTextWrapper from "@/components/BookCard/CardTextWrapper";
 
-const Card = () =>{
-    return(
+const Card = () => {
+    return (
         <div>
             <CardImage/>
-            <Title/>
-            <DiscoundAndPrice/>
+            <CardTextWrapper>
+                <Title/>
+                <DiscoundAndPrice/>
+            </CardTextWrapper>
         </div>
     )
 }
